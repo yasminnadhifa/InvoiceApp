@@ -34,6 +34,6 @@ The Invoice App is designed to streamline the invoicing process for businesses. 
 - **Database**: MySQL
 
 ## API Endpoints
-POST /api/invoices: Create a new invoice.
-GET /api/invoices: Retrieve all published invoices.
-GET /api/graph: Retrieve time and revenue data.
+- POST /api/invoices: Create a new invoice.
+- GET /api/invoices: Retrieve all published invoices.
+- GET /api/graph: Retrieve time and revenue data.
