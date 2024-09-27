@@ -7,6 +7,8 @@ import { addProduct } from "../redux/productSlice";
 import Card from "../components/Card";
 import { submitInvoice } from "../redux/invoiceSlice";
 import Swal from "sweetalert2";
+import { FaTrash } from "react-icons/fa";
+
 
 const InvoiceForm = () => {
   const dispatch = useDispatch();
@@ -19,6 +21,12 @@ const InvoiceForm = () => {
     payment_type: "",
     notes: "",
   });
+  const rupiah = (number)=>{
+    return new Intl.NumberFormat("id-ID", {
+      style: "currency",
+      currency: "IDR"
+    }).format(number);
+  }
   const [errors, setErrors] = useState({});
 
   const calculateTotalAmount = () => {
@@ -170,7 +178,7 @@ const InvoiceForm = () => {
                       />
                     </td>
                     <td className="py-2 px-4 border-b">{product.name}</td>
-                    <td className="py-2 px-4 border-b">${product.price}</td>
+                    <td className="py-2 px-4 border-b">{rupiah(product.price)}</td>
                     <td className="py-2 px-4 border-b">
                       <Button
                         type="button"
@@ -195,19 +203,19 @@ const InvoiceForm = () => {
                 <div key={product.id} className="flex items-center justify-between border-b py-2">
                   <img src={product.image} alt={product.name} width="50" className="mr-2" />
                   <span>
-                    {product.name} - ${product.price} x {product.quantity}
+                    {product.name} - {rupiah(product.price)} x {product.quantity}
                   </span>
                   <button
                     type="button"
                     className="text-red-500 hover:underline"
                   >
-                    Remove
+                    <FaTrash />
                   </button>
                 </div>
               ))}
               <div className="mt-4 border-t pt-4 text-right">
                 <h6 className="text-lg font-semibold">
-                  Total Amount: ${calculateTotalAmount()}
+                  Total Amount: {rupiah(calculateTotalAmount())}
                 </h6>
               </div>
             </div>
