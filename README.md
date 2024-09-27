@@ -5,11 +5,8 @@
 - [Overview](#overview)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
-- [Installation](#installation)
-- [Usage](#usage)
 - [API Endpoints](#api-endpoints)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## Overview
 The Invoice App is designed to streamline the invoicing process for businesses. It allows users to create and manage invoices effortlessly, providing features such as product autocompletion, invoice cards with pagination, and revenue projection graphs.
@@ -32,11 +29,11 @@ The Invoice App is designed to streamline the invoicing process for businesses. 
 - **Auto Scroll**: Automatically scroll to display new data when it is added.
 
 ## Technologies Used
-- **Frontend**: React.js, Redux
+- **Frontend**: React.js, Redux, Tailwind
 - **Backend**: Node.js
-- **Database**: MySQL or PostgreSQL
+- **Database**: MySQL
 
-## Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/invoice-app.git
+## API Endpoints
+POST /api/invoices: Create a new invoice.
+GET /api/invoices: Retrieve all published invoices.
+GET /api/graph: Retrieve time and revenue data.
