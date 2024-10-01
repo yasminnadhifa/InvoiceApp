@@ -39,7 +39,7 @@ export const createInvoice = async (req, res) => {
 }
 
 export const getInvoices = async (req, res) => {
-    const { page = 1, limit = 13 } = req.query; 
+    const { page = 1, limit = 12 } = req.query; 
     const offset = (page - 1) * limit;
     try {
         const invoices = await Invoice.findAndCountAll({

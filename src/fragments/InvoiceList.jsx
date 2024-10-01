@@ -40,6 +40,7 @@ const InvoiceList = () => {
                 id={invoice.id}
                 name={invoice.customer}
                 date={invoice.date}
+                notes={invoice.notes}
                 total_amount={invoice.total_amount}
                 payment_type ={invoice.payment_type}
 
