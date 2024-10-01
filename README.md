@@ -37,3 +37,13 @@ The Invoice App is designed to streamline the invoicing process for businesses. 
 - POST /api/invoices: Create a new invoice.
 - GET /api/invoices: Retrieve all published invoices.
 - GET /api/graph: Retrieve time and revenue data.
+
+## Visual 
+![image](https://github.com/user-attachments/assets/a2d0bb89-1ae9-4c12-89c6-df7276ecdbed)
+![image](https://github.com/user-attachments/assets/8d0ecab1-f84f-4701-829f-4e194f535f7e)
+![image](https://github.com/user-attachments/assets/c1ae1719-a093-40c4-a6a5-a8350eb8a8f9)
+![image](https://github.com/user-attachments/assets/d0c85ffa-c77e-4688-990d-de9c15108f41)
+
+
+
+
