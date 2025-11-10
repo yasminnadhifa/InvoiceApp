@@ -8,6 +8,7 @@ export const Invoices = () => {
   return (
     <>
       <Layout>
+        <div></div>
         <div className="space-y-4">
           <Card>
             <h1 className="text-2xl font-bold">Add Invoice</h1>
